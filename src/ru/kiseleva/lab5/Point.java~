@@ -10,16 +10,6 @@ public abstract class Point implements Summetry, TranslationByVektor {
     public abstract boolean isLocateAxis();
 
     public abstract int numberOfVariables();
-    
-    public abstract int number();
-    
-    public abstract int month();
-    
-    public abstract int year();
-    
-    public abstract int hour();
-    
-    public abstract int minutes();
 
     {
         id = nextId++;

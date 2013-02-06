@@ -14,7 +14,7 @@ public class PointOfTwoDimensionalSpace extends Point {
 
     @Override
     public String toString() {
-        return "id=" + getId() + ", " + getName() + ",  параметры: (" + x + "," + y + ")" + "кол-во параметров: " + this.numberOfVariables()+", дата и время создания: "+this.number()+"."+this.month()+"."+this.year()+" "+this.hour()+":"+this.minutes();
+        return "id=" + getId() + ", " + getName() + ",  параметры: (" + x + "," + y + ")" + "кол-во параметров: " + this.numberOfVariables();
     }
 
     @Override
@@ -38,30 +38,5 @@ public class PointOfTwoDimensionalSpace extends Point {
     public void transfer(Vektor p) {
         this.x += p.x1 - p.x0;
         this.y += p.y1 - p.y1;
-    }
-
-    @Override
-    public int number() {
-        return 10;
-    }
-
-    @Override
-    public int month() {
-        return 10;
-    }
-
-    @Override
-    public int year() {
-        return 2012;
-    }
-
-    @Override
-    public int hour() {
-        return 21;
-    }
-
-    @Override
-    public int minutes() {
-        return 30;
     }
 }

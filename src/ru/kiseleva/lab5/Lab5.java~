@@ -44,8 +44,6 @@ public class Lab5 {
                     + "\nчетырехмерного пространства на оси OT?");
             System.out.println("8 - симметрия точки относительно начала координат");
             System.out.println("9 - перенос точки на заданный вектор");
-            System.out.println("10 - по возрастанию даты");
-            System.out.println("11 - по убыванию даты");
             System.out.println("--------------------------------------------------");
 
             String mode = br.readLine(); // читаем строку из буфера ввода
@@ -122,16 +120,6 @@ public class Lab5 {
 
                         e.transfer(p);
                     }
-                    break;
-                }
-                case "10": {
-                    sortUp = false;
-                    sortMode = 3;
-                    break;
-                }
-                case "11": {
-                    sortUp = true;
-                    sortMode = 3;
                     break;
                 }
             }

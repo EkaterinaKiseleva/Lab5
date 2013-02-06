@@ -17,7 +17,7 @@ public class PointOfThreeDimensionalSpace extends Point {
 
     @Override
     public String toString() {
-        return "id=" + getId() + ", " + getName() + ",  параметры: (" + x + "," + y + "," + z + ")" + "кол-во параметров: " + this.numberOfVariables()+", дата и время создания: "+this.number()+"."+this.month()+"."+this.year()+" "+this.hour()+":"+this.minutes();
+        return "id=" + getId() + ", " + getName() + ",  параметры: (" + x + "," + y + "," + z + ")" + "кол-во параметров: " + this.numberOfVariables();
     }
 
     @Override
@@ -42,30 +42,5 @@ public class PointOfThreeDimensionalSpace extends Point {
         this.x += p.x1 - p.x0;
         this.y += p.y1 - p.y0;
         this.z += p.z1 - p.z0;
-    }
-
-    @Override
-    public int number() {
-        return 23;
-    }
-
-    @Override
-    public int month() {
-        return 9;
-    }
-
-    @Override
-    public int year() {
-        return 2012;
-    }
-
-    @Override
-    public int hour() {
-        return 15;
-    }
-
-    @Override
-    public int minutes() {
-        return 40;
     }
 }

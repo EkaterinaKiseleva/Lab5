@@ -12,7 +12,7 @@ public class PointOneDimensionalSpace extends Point {
 
     @Override
     public String toString() {
-        return "id=" + getId() + ", " + getName() + ",  параметры: (" + x + ")" + "кол-во параметров: " + this.numberOfVariables()+", дата и время создания: "+this.number()+"."+this.month()+"."+this.year()+" "+this.hour()+":"+this.minutes();
+        return "id=" + getId() + ", " + getName() + ",  параметры: (" + x + ")" + "кол-во параметров: " + this.numberOfVariables();
     }
 
     @Override
@@ -33,30 +33,5 @@ public class PointOneDimensionalSpace extends Point {
     @Override
     public void transfer(Vektor p) {
         this.x += p.x1 - p.x0;
-    }
-
-    @Override
-    public int number() {
-       return 5;
-    }
-
-    @Override
-    public int month() {
-        return 10;
-    }
-
-    @Override
-    public int year() {
-        return 2012;
-    }
-
-    @Override
-    public int hour() {
-        return 12;
-    }
-
-    @Override
-    public int minutes() {
-        return 19;
     }
 }
